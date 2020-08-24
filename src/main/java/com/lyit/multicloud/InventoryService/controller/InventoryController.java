@@ -1,5 +1,7 @@
 package com.lyit.multicloud.InventoryService.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lyit.multicloud.InventoryService.data.models.InventoryModel;
 import com.lyit.multicloud.InventoryService.services.InventoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,13 @@ public class InventoryController {
 
     @PostMapping("/inventory")
     public InventoryModel addInventory(@RequestBody InventoryModel inventoryModel) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = "";
+        try {
+            InventoryModel inventoryModel1 = objectMapper.readValue(json, InventoryModel.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
         return inventoryService.addInventory(inventoryModel);
     }
 
