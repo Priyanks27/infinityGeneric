@@ -10,4 +10,5 @@ import java.util.Optional;
 @Repository
 public interface InventoryRepository extends JpaRepository<InventoryModel, Long> {
     Optional<List<InventoryModel>> findAllByCategory(String category);
+    Optional<List<InventoryModel>> findAllByInventoryName(String inventoryName);
 }

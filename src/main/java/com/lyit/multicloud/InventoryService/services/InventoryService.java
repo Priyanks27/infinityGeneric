@@ -17,5 +17,7 @@ public interface InventoryService {
 
     List<InventoryModel> getInventoryItemsByCategory(String category);
 
+    public List<InventoryModel> getInventoryItemsByInventoryName(String inventoryName);
+
     List<InventoryModel> getAllInventoryItems();
 }
