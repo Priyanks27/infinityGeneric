@@ -1,4 +1,4 @@
-package com.lyit.multicloud.InventoryService.controller;
+package com.twilio.test.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

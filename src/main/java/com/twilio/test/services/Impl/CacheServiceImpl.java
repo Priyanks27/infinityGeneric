@@ -1,7 +1,7 @@
-package com.lyit.multicloud.InventoryService.services.Impl;
+package com.twilio.test.services.Impl;
 
-import com.lyit.multicloud.InventoryService.helper.EhCacheManager;
-import com.lyit.multicloud.InventoryService.services.CacheService;
+import com.twilio.test.helper.EhCacheManager;
+import com.twilio.test.services.CacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
